@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.js": "/greevil/static/js/main.4e317ca7.chunk.js",
-    "main.js.map": "/greevil/static/js/main.4e317ca7.chunk.js.map",
+    "main.js": "/greevil/static/js/main.b12487da.chunk.js",
+    "main.js.map": "/greevil/static/js/main.b12487da.chunk.js.map",
     "runtime-main.js": "/greevil/static/js/runtime-main.b29d6a6e.js",
     "runtime-main.js.map": "/greevil/static/js/runtime-main.b29d6a6e.js.map",
     "static/css/2.18d8decb.chunk.css": "/greevil/static/css/2.18d8decb.chunk.css",
-    "static/js/2.488d6b40.chunk.js": "/greevil/static/js/2.488d6b40.chunk.js",
-    "static/js/2.488d6b40.chunk.js.map": "/greevil/static/js/2.488d6b40.chunk.js.map",
+    "static/js/2.1410013d.chunk.js": "/greevil/static/js/2.1410013d.chunk.js",
+    "static/js/2.1410013d.chunk.js.map": "/greevil/static/js/2.1410013d.chunk.js.map",
     "index.html": "/greevil/index.html",
-    "precache-manifest.96d60ee520dba2acdf14f4b02c620db0.js": "/greevil/precache-manifest.96d60ee520dba2acdf14f4b02c620db0.js",
+    "precache-manifest.64af16ade4cf13ee7203b6aab8f58ec0.js": "/greevil/precache-manifest.64af16ade4cf13ee7203b6aab8f58ec0.js",
     "service-worker.js": "/greevil/service-worker.js",
     "static/css/2.18d8decb.chunk.css.map": "/greevil/static/css/2.18d8decb.chunk.css.map",
-    "static/js/2.488d6b40.chunk.js.LICENSE": "/greevil/static/js/2.488d6b40.chunk.js.LICENSE"
+    "static/js/2.1410013d.chunk.js.LICENSE": "/greevil/static/js/2.1410013d.chunk.js.LICENSE"
   },
   "entrypoints": [
     "static/js/runtime-main.b29d6a6e.js",
     "static/css/2.18d8decb.chunk.css",
-    "static/js/2.488d6b40.chunk.js",
-    "static/js/main.4e317ca7.chunk.js"
+    "static/js/2.1410013d.chunk.js",
+    "static/js/main.b12487da.chunk.js"
   ]
 }
