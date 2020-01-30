@@ -1,8 +1,14 @@
+import 'destyle.css';
+import localforage from 'localforage';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { hot } from 'react-hot-loader/root';
+import AppRouter from './AppRouter';
 import * as serviceWorker from './serviceWorker';
+
+localforage.config({ name: 'Greevil DB' });
+
+const App = hot(() => <AppRouter />);
 
 ReactDOM.render(<App />, document.getElementById('root'));
 
