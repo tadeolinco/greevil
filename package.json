@@ -9,6 +9,7 @@
     "date-fns": "^2.9.0",
     "destyle.css": "^1.0.11",
     "formik": "^2.1.2",
+    "gh-pages": "^2.2.0",
     "localforage": "^1.7.3",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -22,7 +23,9 @@
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -68,5 +71,6 @@
     "lint-staged": "^10.0.0",
     "prettier": "^1.19.1",
     "react-hot-loader": "^4.12.18"
-  }
+  },
+  "homepage": "http://tadeolinco.github.io/greevil"
 }
