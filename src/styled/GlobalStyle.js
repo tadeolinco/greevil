@@ -1,14 +1,10 @@
 import styled, { createGlobalStyle } from 'styled-components/macro';
 
 const GlobalStyle = createGlobalStyle`
-  @import url('https://rsms.me/inter/inter.css');
-
-  @supports (font-variation-settings: normal) {
-    html { font-family: 'Inter var', sans-serif; }
-  }
-
+  /* @import url('https://rsms.me/inter/inter.css');*/
   html {
     font-size: 16px;
+    height: 100%;
   }
 
   body {
@@ -18,6 +14,11 @@ const GlobalStyle = createGlobalStyle`
     -moz-osx-font-smoothing: grayscale;
     background-color: #E0E0E0;
     color: #212121;
+    height: 100%;
+  }
+
+  #root {
+    height: 100%;
   }
 
   code {
