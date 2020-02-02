@@ -18,7 +18,7 @@ export const NewTransaction = () => {
   const category = categories[params.id] || {};
 
   const { values, handleChange, handleSubmit } = useFormik({
-    initialValues: { amount: '0', description: '' },
+    initialValues: { amount: '', description: '' },
     onSubmit: data => {
       const id = uuid();
       localforage

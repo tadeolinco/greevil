@@ -19,7 +19,7 @@ const Budget = () => {
   const budget = category ? category.budgets[params.budgetId] : null;
 
   const { values, handleChange, setFormikState, handleSubmit } = useFormik({
-    initialValues: { date: new Date(), amount: '0' },
+    initialValues: { date: new Date(), amount: '' },
     onSubmit: data => {
       localforage
         .setItem('categories', {

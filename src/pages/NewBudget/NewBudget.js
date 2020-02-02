@@ -22,7 +22,7 @@ const NewBudget = () => {
   const prevCategory = usePrevious(category);
 
   const { values, handleChange, handleSubmit, setFieldValue } = useFormik({
-    initialValues: { date: format(new Date(), 'yyyy-MM'), amount: '0' },
+    initialValues: { date: format(new Date(), 'yyyy-MM'), amount: '' },
     onSubmit: data => {
       if (isAfter(new Date(data.date), new Date())) {
         return alert('Cannot assign budget to date before today');

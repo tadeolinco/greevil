@@ -19,7 +19,7 @@ const NewCategory = () => {
   const { values, handleChange, handleSubmit } = useFormik({
     initialValues: {
       name: '',
-      budget: '0',
+      budget: '',
       startMonth: format(new Date(), 'yyyy-MM'),
     },
 
