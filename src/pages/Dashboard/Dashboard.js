@@ -57,12 +57,13 @@ const Dashboard = () => {
           <div style={{ flex: 1 }}>Monthly expenses:</div>
           <div style={{ flex: 1, textAlign: 'right' }}>{monthlyExpenses}</div>
         </Row>
-        <Row style={{ padding: '0.5rem' }}>
+        <Row style={{ padding: '0.5rem', paddingBottom: 0 }}>
           <div style={{ flex: 1 }}>Monthly savings:</div>
           <div style={{ flex: 1, textAlign: 'right' }}>
             {income - monthlyExpenses}
           </div>
         </Row>
+        <Row style={{ padding: '0.5rem' }}>Version: 0.0.3</Row>
       </div>
       <Row>
         <Button onClick={() => history.push('/category')} style={{ flex: 1 }}>
