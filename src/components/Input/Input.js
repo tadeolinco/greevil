@@ -10,6 +10,7 @@ const Input = ({
   type = 'text',
   placeholder,
   row = false,
+  ...props
 }) => {
   return (
     <InputContainer row={row} type={type}>
@@ -21,6 +22,7 @@ const Input = ({
         onChange={onChange}
         onBlur={onBlur}
         placeholder={placeholder}
+        {...props}
       />
     </InputContainer>
   );

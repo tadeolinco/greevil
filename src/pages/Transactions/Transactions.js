@@ -26,7 +26,7 @@ export const Transactions = () => {
     }
 
     return Object.keys(transactionsMap)
-      .sort((a, b) => b - a)
+      .sort((a, b) => new Date(b) - new Date(a))
       .map(date => {
         let totalAmount = 0;
 
@@ -88,6 +88,9 @@ export const Transactions = () => {
               </tr>
               {data.transactions.map((transaction, index) => (
                 <tr
+                  style={{
+                    backgroundColor: index % 2 === 0 ? 'white' : '#e0e0e0',
+                  }}
                   key={transaction.id}
                   onClick={() => handleDeleteTransaction(transaction.id)}
                 >

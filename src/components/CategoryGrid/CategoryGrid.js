@@ -34,7 +34,8 @@ const CategoryTable = () => {
             <CategoryAmountLeft sign={getSign(assets)}>
               <span onClick={() => history.push(`/category/${id}/transaction`)}>
                 {assets > 0 && '+'}
-                {assets.toLocaleString()}
+                {assets.toLocaleString()} [
+                {Math.round((assets / (budget || 1)) * 100)}%]
               </span>
             </CategoryAmountLeft>
             <CategoryBudget>

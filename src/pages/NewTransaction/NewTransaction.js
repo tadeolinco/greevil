@@ -59,6 +59,7 @@ export const NewTransaction = () => {
           name="amount"
           value={values.amount}
           onChange={handleChange}
+          autoFocus
         />
         <Input
           label="Description"
