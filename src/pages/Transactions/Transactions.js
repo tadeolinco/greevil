@@ -64,6 +64,7 @@ export const Transactions = () => {
     },
     [categories, category, dispatch, id]
   );
+  let index = 0;
 
   return (
     <TransactionsContainer>
@@ -71,36 +72,45 @@ export const Transactions = () => {
       <h6>Category - {category.name}</h6>
       <TransactionsTable>
         <tbody>
-          {transactionsPerDay.map(data => (
-            <Fragment key={data.date}>
-              <tr
-                style={{
-                  paddingTop: '1rem',
-                  borderBottom: '1px solid #e0e0e0',
-                }}
-              >
-                <td colSpan={2} style={{ fontWeight: 'bold' }}>
-                  {format(new Date(data.date), 'MMM d')}
-                </td>
-                <td style={{ textAlign: 'right', fontWeight: 'bold' }}>
-                  {data.totalAmount}
-                </td>
-              </tr>
-              {data.transactions.map((transaction, index) => (
+          {transactionsPerDay.map(data => {
+            index++;
+            return (
+              <Fragment key={data.date}>
                 <tr
                   style={{
+                    paddingTop: '1rem',
+                    borderBottom: '1px solid black',
                     backgroundColor: index % 2 === 0 ? 'white' : '#e0e0e0',
                   }}
-                  key={transaction.id}
-                  onClick={() => handleDeleteTransaction(transaction.id)}
                 >
-                  <td>{format(transaction.date, 'HH:mm')}</td>
-                  <td>{transaction.description || '—'}</td>
-                  <td style={{ textAlign: 'right' }}>{transaction.amount}</td>
+                  <td colSpan={2} style={{ fontWeight: 'bold' }}>
+                    {format(new Date(data.date), 'MMM d')}
+                  </td>
+                  <td style={{ textAlign: 'right', fontWeight: 'bold' }}>
+                    {data.totalAmount}
+                  </td>
                 </tr>
-              ))}
-            </Fragment>
-          ))}
+                {data.transactions.map(transaction => {
+                  index++;
+                  return (
+                    <tr
+                      style={{
+                        backgroundColor: index % 2 === 0 ? 'white' : '#e0e0e0',
+                      }}
+                      key={transaction.id}
+                      onClick={() => handleDeleteTransaction(transaction.id)}
+                    >
+                      <td>{format(transaction.date, 'HH:mm')}</td>
+                      <td>{transaction.description || '—'}</td>
+                      <td style={{ textAlign: 'right' }}>
+                        {transaction.amount}
+                      </td>
+                    </tr>
+                  );
+                })}
+              </Fragment>
+            );
+          })}
         </tbody>
       </TransactionsTable>
     </TransactionsContainer>

@@ -63,7 +63,7 @@ const Dashboard = () => {
             {income - monthlyExpenses}
           </div>
         </Row>
-        <Row style={{ padding: '0.5rem' }}>Version: 0.0.3</Row>
+        <Row style={{ padding: '0.5rem' }}>Version: 0.0.4</Row>
       </div>
       <Row>
         <Button onClick={() => history.push('/category')} style={{ flex: 1 }}>

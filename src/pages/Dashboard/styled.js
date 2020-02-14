@@ -7,4 +7,5 @@ export const DashboardContainer = styled(Column)`
 
 export const GridContainer = styled.div`
   flex: 1;
+  overflow-y: auto;
 `;

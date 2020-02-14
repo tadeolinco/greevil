@@ -4,6 +4,7 @@ export const TransactionsContainer = styled.div`
   padding: 1rem 0.5rem;
   background-color: white;
   height: 100%;
+  overflow-y: auto;
 
   display: flex;
   flex-direction: column;
@@ -17,6 +18,6 @@ export const TransactionsTable = styled.table`
   width: 100%;
 
   td {
-    padding: 0.25rem 0;
+    padding: 0.5rem;
   }
 `;

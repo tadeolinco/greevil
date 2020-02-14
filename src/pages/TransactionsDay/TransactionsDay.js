@@ -69,10 +69,13 @@ export const TransactionsDay = () => {
       <div style={{ flex: 1, overflowY: 'auto' }}>
         <TransactionsTable>
           <tbody>
-            {transactionsInDate.map(transaction => (
+            {transactionsInDate.map((transaction, index) => (
               <tr
                 key={transaction.id}
                 onClick={() => handleDeleteTransaction(transaction)}
+                style={{
+                  backgroundColor: index % 2 === 0 ? 'white' : '#e0e0e0',
+                }}
               >
                 <td>{transaction.categoryName}</td>
                 <td>{transaction.description || '—'}</td>
